@@ -1,3 +1,4 @@
 number = int(input())
 for i in range(number):
-    print("*"*((i*2)+1))
+    pyramid = ("*"*((i*2)+1))
+    print(pyramid.center(21," "))
