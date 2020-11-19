@@ -15,7 +15,7 @@ def NameRates(event):
     name = code.get_currency_name(),
 
 main_window = Tk()
-title = Label(main_window, text = "Exchange rate calculator", bg = "black", font=("Saraban",10))
+title = Label(main_window, text = "Exchange rate calculator", bg = "white", font=("Saraban",10))
 title.grid(row = 0 , column = 1)
 first_currency = Label(main_window, text ="From : ")
 first_currency.grid(row = 1 , column = 0)
@@ -37,7 +37,7 @@ convert_currency_box.bind("<<ComboboxSelected>>")
 convert_currency_box.grid(row = 5 , column = 1)
 convert_result = Label(main_window, text = "Result : ")
 convert_result.grid(row = 5 , column = 3)
-convert_button = Button(main_window, text = "Convert : ", width=15)
+convert_button = Button(main_window, text = "Convert", width=15)
 convert_button.bind('<Button-1>', Result)
 convert_button.grid(row = 4 , column = 4)
 
