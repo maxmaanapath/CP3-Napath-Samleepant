@@ -15,7 +15,8 @@ def NameRates(event):
     name = code.get_currency_name(),
 
 main_window = Tk()
-title = Label(main_window, text = "Exchange rate calculator", bg = "white", font=("Saraban",10))
+main_window.title ("Exchange rate calculator")
+title = Label(main_window, text = "Exchange rate calculator", bg = "White", font=("Saraban",10))
 title.grid(row = 0 , column = 1)
 first_currency = Label(main_window, text ="From : ")
 first_currency.grid(row = 1 , column = 0)
