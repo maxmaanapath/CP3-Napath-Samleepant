@@ -16,6 +16,7 @@ def NameRates(event):
 
 main_window = Tk()
 main_window.title ("Exchange rate calculator")
+main_window.configure(bg = "#34495E")
 title = Label(main_window, text = "Exchange rate calculator", bg = "White", font=("Saraban",10))
 title.grid(row = 0 , column = 1)
 first_currency = Label(main_window, text ="From : ")
