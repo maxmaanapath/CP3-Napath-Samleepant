@@ -18,19 +18,25 @@ main_window = Tk()
 main_window.title ("Exchange rate calculator")
 main_window.configure(bg = "#34495E")
 title = Label(main_window, text = "Exchange rate calculator",
-              bg = "#34495E",fg = "White", font=("Saraban",10))
+              bg = "#34495E", fg = "White", font=("Saraban",10))
 title.grid(row = 0 , column = 1)
-first_currency = Label(main_window, text ="From : ",fg = "White" , bg = "#34495E")
+first_currency = Label(main_window, text ="From : ", fg = "White" , bg = "#34495E")
 first_currency.grid(row = 1 , column = 0)
 first_currency_box = ttk.Combobox(main_window)
 first_currency_box['values'] = list(rate.get_rates("").keys())
 first_currency_box.current(29)
 first_currency_box.bind("<<ComboboxSelected>>")
 first_currency_box.grid(row = 1 , column = 1)
-text = Label(main_window, text = "Amounts",fg = "White" , bg = "#34495E")
+
+text = Label(main_window, text = "Amounts", fg = "White" , bg = "#34495E")
 text.grid(row = 4 , column = 2)
+
+text = Label(main_window, text = "=", fg = "White" , bg = "#34495E")
+text.grid(row = 4 , column = 3)
+
 amount = Entry(main_window, text = "Input Amounts : ")
 amount.grid(row = 1 , column = 3)
+
 convert_currency = Label(main_window, text = "To : ",fg = "White" , bg = "#34495E")
 convert_currency.grid(row = 5 , column = 0)
 convert_currency_box = ttk.Combobox(main_window)
