@@ -47,7 +47,7 @@ convert_currency_box.bind("<<ComboboxSelected>>")
 convert_currency_box.grid(row = 5 , column = 1)
 convert_result = Label(main_window, text = "Result : ", fg = "White" , bg = "#34495E")
 convert_result.grid(row = 5 , column = 3)
-convert_button = Button(main_window, text = "Convert", width=15)
+convert_button = Button(main_window, text = "Convert", fg = "White", bg = '#283747' , width=15)
 convert_button.bind('<Button-1>', Result)
 convert_button.grid(row = 4 , column = 4)
 
