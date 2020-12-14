@@ -7,7 +7,6 @@ class Vehicle:
 class Car(Vehicle):
     def sayHello(self):
         print("Hello World!! Welcome to Car")
-
 class PickUp(Vehicle):
     def sayHello(self):
         print("Hello World!! Welcome to PickUp")
