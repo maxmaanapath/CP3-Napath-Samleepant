@@ -4,7 +4,6 @@ class Vehicle:
     face = ""
     def turnOnAirConditioner(self):
         print("Turn On : Air")
-
 class Car(Vehicle):
     def sayHello(self):
         print("Hello World!! Welcome to Car")
