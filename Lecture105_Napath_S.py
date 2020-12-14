@@ -16,7 +16,6 @@ class Van(Vehicle):
 class EstrateCar(Vehicle):
     def sayHello(self):
         print("Hello World!! Welcome to EstrateCar")
-
 car1 = Car()
 car1.turnOnAirConditioner()
 
